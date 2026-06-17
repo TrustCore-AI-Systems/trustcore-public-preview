@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TrustCore — Control Before Consequence</title>
+  <style>
+    :root {
+      --bg: #0d0e10;
+      --fg: #e6f5fa;
+      --accent: #00b5c8;
+      --accent-light: #13c9db;
+      --font-main: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    }
+    body {
+      margin: 0;
+      font-family: var(--font-main);
+      background-color: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      padding: 2rem;
+    }
+    header img {
+      width: 220px;
+      height: auto;
+    }
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-top: 0;
+      color: var(--accent-light);
+    }
+    p.lead {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+      color: #b0dfe7;
+    }
+    ul.features {
+      list-style: none;
+      padding: 0;
+      margin: 2rem 0;
+    }
+    ul.features li {
+      margin-bottom: 1.5rem;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+    ul.features li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.4rem;
+      width: 0.75rem;
+      height: 0.75rem;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+    a.button {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      margin-top: 1rem;
+      border-radius: 4px;
+      background: var(--accent);
+      color: var(--bg);
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+    a.button:hover {
+      background: var(--accent-light);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #8caeb4;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.svg" alt="TrustCore logo" />
+  </header>
+  <main>
+    <h1>Control Before Consequence</h1>
+    <p class="lead">
+      TrustCore builds a pre‑execution control layer for AI systems.  We ensure that
+      AI‑driven actions are governed, auditable, and subject to human oversight
+      before they affect real‑world systems.
+    </p>
+    <ul class="features">
+      <li><strong>Runtime governance:</strong> Policies are enforced at execution time, not just during development.</li>
+      <li><strong>Human approval boundary:</strong> High‑risk actions require explicit authorization.  YES is not SEND.</li>
+      <li><strong>Audit trail:</strong> Every approve, refuse, or supervised override produces a sealed record.</li>
+      <li><strong>Vendor‑neutral design:</strong> Works with various AI frameworks and infrastructure.</li>
+    </ul>
+    <a href="docs/admissibility-gate.md" class="button">Read the concept paper</a>
+  </main>
+  <footer>
+    &copy; 2026 TrustCore AI Systems Oy.  All rights reserved.
+  </footer>
+</body>
+</html>
